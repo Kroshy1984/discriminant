@@ -7,9 +7,9 @@ b=int(input("Please, write b, b="))
 c=int(input("Please, write c, c="))
 D=b**2-4*a*c
 print("The Descriminant is,",D)
-If D>0:
+if (D>0):
 	print("The Descriminant is positive.The ",a,"x^2+",b,"x+",c,"=0 has two roots")
-elif D=0:
+elif D==0:
 	print("The Descriminant is zero.The ",a,"x^2+",b,"x+",c,"=0 has only one root")
 else: 
 	print("The Descriminant is negative.The ",a,"x^2+",b,"x+",c,"=0 hasn't any roots")
