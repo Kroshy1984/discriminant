@@ -1,0 +1,9 @@
+# this is the first version
+print ("hello!")
+print("This is the program for descriminant calculation")
+print("Please load the coefficients")
+a=int(input("Please, write a, a="))
+b=int(input("Please, write b, b="))
+c=int(input("Please, write c, c="))
+D=b**2-4*a*c
+print("The Descriminant is," D)
