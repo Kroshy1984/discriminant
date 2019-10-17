@@ -2,7 +2,14 @@
 print ("hello!")
 print("This is the program for descriminant calculation")
 print("Please load the coefficients")
-a=int(input("Please, write a, a="))
+i=False
+while i!=True:
+	try:
+		a=int(input("Please, write a, a="))
+	except ValueError as err:
+		#print(err)		
+		print ("Your a is not int. Please load a correctly!")
+	else: i=True
 b=int(input("Please, write b, b="))
 c=int(input("Please, write c, c="))
 D=b**2-4*a*c
