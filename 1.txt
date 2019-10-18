@@ -10,13 +10,31 @@ while i!=True:
 		#print(err)		
 		print ("Your a is not int. Please load a correctly!")
 	else: i=True
-b=int(input("Please, write b, b="))
-c=int(input("Please, write c, c="))
+i=False
+while i!=True:
+	try:
+		b=int(input("Please, write b, b="))
+	except ValueError as err:
+		#print(err)		
+		print ("Your b is not int. Please load b correctly!")
+	else: i=True
+i=False
+while i!=True:
+	try:
+		c=int(input("Please, write c, c="))
+	except ValueError as err:
+		#print(err)		
+		print ("Your c is not int. Please load c correctly!")
+	else: i=True
 D=b**2-4*a*c
 print("The Descriminant is,",D)
 if (D>0):
 	print("The Descriminant is positive.The ",a,"x^2+",b,"x+",c,"=0 has two roots")
+	x1=(-b+D**(0.5))/2*a
+	x2=(-b-D**(0.5))/2*a
+	print("one root is", x1, "and another root is ",x2)
 elif D==0:
 	print("The Descriminant is zero.The ",a,"x^2+",b,"x+",c,"=0 has only one root")
+	x0=-b/2*a
 else: 
 	print("The Descriminant is negative.The ",a,"x^2+",b,"x+",c,"=0 hasn't any roots")
