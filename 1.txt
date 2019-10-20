@@ -39,3 +39,13 @@ elif D==0:
 	print(chr(9461),"one root is", x0,sep="")
 else: 
 	print("The Descriminant is negative.The ",a,"x^2+",b,"x+",c,"=0 hasn't any roots", sep="")
+if ((a>0) and (D>0)): 
+	print ("the ",a,"x^2+",b,"x+",c,">0 on (-",chr(8734),";",x1,")",chr(8746),"(",x2,";+",chr(8734),")", sep="")
+	print("the ",a,"x^2+",b,"x+",c,"<0 on (",x1,";",x2,")",sep="")
+elif (a<0 )and (D>0):
+	print ("the ",a,"x^2+",b,"x+",c,"<0 on (-",chr(8734),";",x1,chr(8746),"(",x2,";+",chr(8734), ")",sep="")
+	print("the ",a,"x^2+",b,"x+",c,">0 on (",x1,";",x2,")", sep="")
+elif (a>0) and D<0:
+	print("the ",a,"x^2+",b,"x+",c,">0 at (-",chr(8734),";+",chr(8734),")",sep="")
+elif (a<0) and (D<0):
+	print("the ",a,"x^2+",b,"x+",c,"<0 at (-",chr(8734),";+",chr(8734),")",sep="")
