@@ -2,30 +2,27 @@
 print ("hello!")
 print("This is the program for descriminant calculation")
 print("Please load the coefficients")
-i=False
-while i!=True:
+while True:
 	try:
 		a=int(input("Please, write a, a="))
-	except ValueError as err:
-		#print(err)		
+	except ValueError as err:		
 		print (chr(9940),"Your a is not int. Please load a correctly!", chr(9757))
-	else: i=True
-i=False
-while i!=True:
+		continue
+	else: break
+while True:
 	try:
 		b=int(input("Please, write b, b="))
 	except ValueError as err:
-		#print(err)		
 		print (chr(9940),"Your b is not int. Please load b correctly!",chr(9757))
-	else: i=True
-i=False
-while i!=True:
+		continue
+	else: break
+while True:
 	try:
 		c=int(input("Please, write c, c="))
-	except ValueError as err:
-		#print(err)		
+	except ValueError as err:	
 		print (chr(9940),"Your c is not int. Please load c correctly!",chr(9757))
-	else: i=True
+		continue
+	else: break
 D=b**2-4*a*c
 print("The Descriminant is,",D)
 if a==0 and c<0:print ("It's a line ",b,"x",c,"=0",sep="")
