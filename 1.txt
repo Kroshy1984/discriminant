@@ -23,14 +23,23 @@ while True:
 		print (chr(9940),"Your c is not int. Please load c correctly!",chr(9757))
 		continue
 	else: break
+if a>0 and c>0 and b>0: equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
+elif a>0 and c>0 and b<0:equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+str(c)+'=0'
+elif a>0 and c<0 and b>0:equal=str(a)+'x'+chr(178)+str(b)+'x'+'+'+str(c)+'=0'
+elif a>0 and c<0 and b<0: equal=str(a)+'x'+chr(178)+str(b)+'x'+str(c)+'=0'
+elif a==0 and c>0:equal=str(b)+'x'+'+'+str(c)+'=0'
+elif a==0 and c<0: equal=str(b)+'x'+str(c)+'=0'
+print(equal)
 D=b**2-4*a*c
 print("The Descriminant is,",D)
 if a==0 and c<0:print ("It's a line ",b,"x",c,"=0",sep="")
 if a==0 and c<0:print ("It's a line ",b,"x",c,"=0",sep="")
+if(D<0):
+	if c<0 and b<0: print("The Descriminant is positive.The ",a,"x",chr(178),b,"x",c,"=0 hasn't roots",sep="")
+	elif c>0 and b>0:print("The Descriminant is positive.The ",a,"x",chr(178),"+",b,"x+",c,"=0 hasn't roots",sep="")
+	elif c>0 and b<0:print("The Descriminant is positive.The ",a,"x",chr(178),b,"x+",c,"=0 hasn't roots",sep="")
 elif (D>0):
 	if c<0 and b>0:print("The Descriminant is positive.The ",a,"x",chr(178),"+",b,"x",c,"=0 has two roots",sep="")
-	elif c>0 and b>0:print("The Descriminant is positive.The ",a,"x",chr(178),"+",b,"x+",c,"=0 has two roots",sep="")
-	elif c>0 and b<0:print("The Descriminant is positive.The ",a,"x",chr(178),b,"x+",c,"=0 has two roots",sep="")
 	else:print("The Descriminant is positive.The ",a,"x",chr(178),b,"x",c,"=0 has two roots",sep="")
 	x1=(-b+D**(0.5))/2*a
 	x2=(-b-D**(0.5))/2*a
