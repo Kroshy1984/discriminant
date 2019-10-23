@@ -54,37 +54,27 @@ D=b**2-4*a*c
 print("The Descriminant is,",D)
 if a==0 and c<0:print ("It's a line ",b,"x",c,"=0",sep="")
 if a==0 and c<0:print ("It's a line ",b,"x",c,"=0",sep="")
-if(D<0):
-	if c<0 and b<0: print("The Descriminant is positive.The ",a,"x",chr(178),b,"x",c,"=0 hasn't roots",sep="")
-	elif c>0 and b>0:print("The Descriminant is positive.The ",a,"x",chr(178),"+",b,"x+",c,"=0 hasn't roots",sep="")
-	elif c>0 and b<0:print("The Descriminant is positive.The ",a,"x",chr(178),b,"x+",c,"=0 hasn't roots",sep="")
-elif (D>0):
-	if c<0 and b>0:print("The Descriminant is positive.The ",a,"x",chr(178),"+",b,"x",c,"=0 has two roots",sep="")
-	else:print("The Descriminant is positive.The ",a,"x",chr(178),b,"x",c,"=0 has two roots",sep="")
+if(D<0): print("The Descriminant is positive.The",equal," hasn't roots",sep="")
+elif (D>0): 
+	print("The Descriminant is positive.The ",equal," has two roots",sep="")
 	x1=(-b+D**(0.5))/2*a
 	x2=(-b-D**(0.5))/2*a
 	print(chr(9461),"one root is", x1, chr(9462),"and another root is ",x2)
 elif D==0:
 	x0=-b/2*a
-	if c<0 and b>0: print("The Descriminant is zero.The ",a,"x",chr(178),"+",b,"x",c,"=0 has only one root",sep="")
-	elif c>0 and b>0: print("The Descriminant is zero.The ",a,"x",chr(178),"+",b,"x+",c,"=0 has only one root",sep="")
-	elif c>0 and b<0: print ("The Descriminant is zero.The ",a,"x",chr(178),b,"x+",c,"=0 has only one root",sep="")
-	else: print("The Descriminant is zero.The ",a,"x",chr(178),b,"x",c,"=0 has only one root",sep="")
+	print("The Descriminant is zero.The ",equal," has only one root",sep="")
 	print(chr(9461),"one root is", x0,sep="")
 else: 
-	if c<0 and b>0: print("The Descriminant is negative.The ",a,"x",chr(178),"+",b,"x",c,"=0 hasn't any roots", sep="")
-	elif c>0 and b>0: print("The Descriminant is negative.The ",a,"x",chr(178),"+",b,"x+",c,"=0 hasn't any roots", sep="")
-	elif c>0 and b<0: print("The Descriminant is negative.The ",a,"x",chr(178),b,"x+",c,"=0 hasn't any roots", sep="")
-	else: print("The Descriminant is negative.The ",a,"x",chr(178),b,"x",c,"=0 hasn't any roots", sep="")
+	print("The Descriminant is negative.The ",equal,"hasn't any roots", sep="")
 if ((a>0) and (D>0)): 
-	print ("the ",a,"x",chr(178),"+",b,"x+",c,">0 on (-",chr(8734),";",x1,")",chr(8746),"(",x2,";+",chr(8734),")", sep="")
-	print("the ",a,"x^2+",b,"x+",c,"<0 on (",x1,";",x2,")",sep="")
+	print ("the ",equal,">0 on (-",chr(8734),";",x1,")",chr(8746),"(",x2,";+",chr(8734),")", sep="")
+	print("the ",equal,"<0 on (",x1,";",x2,")",sep="")
 elif (a<0 )and (D>0):
-	print ("the ",a,"x",chr(178),"+",b,"x+",c,"<0 on (-",chr(8734),";",x1,chr(8746),"(",x2,";+",chr(8734), ")",sep="")
-	print("the ",a,"x",chr(178),"+",b,"x+",c,">0 on (",x1,";",x2,")", sep="")
+	print ("the ",equal,"<0 on (-",chr(8734),";",x1,chr(8746),"(",x2,";+",chr(8734), ")",sep="")
+	print("the ",equal,">0 on (",x1,";",x2,")", sep="")
 elif (a>0) and D<0:
-	print("the ",a,"x",chr(178),"+",b,"x+",c,">0 at (-",chr(8734),";+",chr(8734),")",sep="")
+	print("the ",equal,">0 at (-",chr(8734),";+",chr(8734),")",sep="")
 elif (a<0) and (D<0):
-	print("the ",a,"x",chr(178),"+",b,"x+",c,"<0 at (-",chr(8734),";+",chr(8734),")",sep="")
-elif(a>0) and D==0:print ("the ",a,"x",chr(178),"+",b,"x+",c,">0 on (-",chr(8734),";",x0,chr(8746),"(",x0,";+",chr(8734), ")",sep="")
-elif(a<0) and D==0:print ("the ",a,"x",chr(178),"+",b,"x+",c,"<0 on (-",chr(8734),";",x0,chr(8746),"(",x0,";+",chr(8734), ")",sep="")
+	print("the ",equal,"<0 at (-",chr(8734),";+",chr(8734),")",sep="")
+elif(a>0) and D==0:print ("the ",equal,">0 on (-",chr(8734),";",x0,chr(8746),"(",x0,";+",chr(8734), ")",sep="")
+elif(a<0) and D==0:print ("the ",equal,"<0 on (-",chr(8734),";",x0,chr(8746),"(",x0,";+",chr(8734), ")",sep="")
