@@ -23,17 +23,19 @@ while True:
 		print (chr(9940),"Your c is not int. Please load c correctly!",chr(9757))
 		continue
 	else: break
-if c>0 and b>0 and a!=1 and b!=1 and a!=-1: equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
-elif c>0 and b<0 and a!=1 and b!=-1 and a!=-1:equal=str(a)+'x'+chr(178)+str(b)+'x'+'+'+str(c)+'=0'
-elif c<0 and b>0 and a!=1 and b!=1 and a!=-1: equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
-elif c<0 and b<0 and a!=1 and b!=-1 and a!=-1: equal=str(a)+'x'+chr(178)+str(b)+'x'+str(c)+'=0'
+if c>0 and b>0 and a!=1 and b!=1 and a!=-1 and c!=0: equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
+elif c>0 and b<0 and a!=1 and b!=-1 and a!=-1 and c!=0:equal=str(a)+'x'+chr(178)+str(b)+'x'+'+'+str(c)+'=0'
+elif c<0 and b>0 and a!=1 and b!=1 and a!=-1 and c!=0: equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
+elif c<0 and b<0 and a!=1 and b!=-1 and a!=-1 and c!=0: equal=str(a)+'x'+chr(178)+str(b)+'x'+str(c)+'=0'
 elif a==0 and c>0:equal=str(b)+'x'+'+'+str(c)+'=0'
 elif a==0 and c<0: equal=str(b)+'x'+str(c)+'=0'
 elif b==0 and a>0 and c>0  and a!=1: equal=str(a)+'x'+chr(178)+'+'+str(c)+'=0'
 elif b==0 and a>0 and c<0 and a!=1: equal=str(a)+'x'+chr(178)+str(c)+'=0'
-elif c==0 and b>0: equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'=0'
-elif c==0 and b<0: equal=str(a)+'x'+chr(178)+str(b)+'x'+'=0' 
-elif a==1 and c>0 and b>0 and b!=1:equal='x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
+elif c==0 and b>0 and a!=1 and a!=-1: equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'=0'
+elif c==0 and b<0 and a!=1 and a!=-1: equal=str(a)+'x'+chr(178)+str(b)+'x'+'=0' 
+elif c==0 and b>0 and a==1: equal='x'+chr(178)+'+'+str(b)+'x'+'=0'
+elif c==0 and b>0 and a==-1: equal='-x'+chr(178)+'+'+str(b)+'x'+'=0'
+elif a==1 and (c>0) and b>0 and b!=1:equal='x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
 elif a==1 and c>0 and b<0:equal='x'+chr(178)+str(b)+'x'+'+'+str(c)+'=0'
 elif a==1 and c<0 and b<0: equal='x'+chr(178)+str(b)+'x'+str(c)+'=0'
 elif a==1 and c<0 and b>0: equal='x'+chr(178)+'+'+str(b)+'x'+str(c)+'=0'
@@ -74,11 +76,11 @@ if ((a>0) and (D>0)):
 	print ("the ",equal[0:-2],">0 on (-",chr(8734),";",x1,")",chr(8746),"(",x2,";+",chr(8734),")", sep="")
 	print("the ",equal[0:--2],"<0 on (",x1,";",x2,")",sep="")
 elif (a<0 )and (D>0):
-	print ("the ",equal[0:-2],"<0 on (-",chr(8734),";",x1,chr(8746),"(",x2,";+",chr(8734), ")",sep="")
+	print ("the ",equal[0:-2],"<0 on (-",chr(8734),";",x1,")",chr(8746),"(",x2,";+",chr(8734), ")",sep="")
 	print("the ",equal[0:-2],">0 on (",x1,";",x2,")", sep="")
 elif (a>0) and D<0:
 	print("the ",equal[0:-2],">0 at (-",chr(8734),";+",chr(8734),")",sep="")
 elif (a<0) and (D<0):
 	print("the ",equal,"<0 at (-",chr(8734),";+",chr(8734),")",sep="")
-elif(a>0) and D==0:print ("the ",equal[0:-2],">0 on (-",chr(8734),";",x0,chr(8746),"(",x0,";+",chr(8734), ")",sep="")
-elif(a<0) and D==0:print ("the ",equal[0:-2],"<0 on (-",chr(8734),";",x0,chr(8746),"(",x0,";+",chr(8734), ")",sep="")
+elif(a>0) and D==0:print ("the ",equal[0:-2],">0 on (-",chr(8734),";",x0,")",chr(8746),"(",x0,";+",chr(8734), ")",sep="")
+elif(a<0) and D==0:print ("the ",equal[0:-2],"<0 on (-",chr(8734),";",x0,')',chr(8746),"(",x0,";+",chr(8734), ")",sep="")
