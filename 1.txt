@@ -74,7 +74,7 @@ else:
 	print("The Descriminant is negative.The ",equal,"hasn't any roots", sep="")
 if ((a>0) and (D>0)): 
 	print ("the ",equal[0:-2],">0 on (-",chr(8734),";",x1,")",chr(8746),"(",x2,";+",chr(8734),")", sep="")
-	print("the ",equal[0:--2],"<0 on (",x1,";",x2,")",sep="")
+	print("the ",equal[0:-2],"<0 on (",x1,";",x2,")",sep="")
 elif (a<0 )and (D>0):
 	print ("the ",equal[0:-2],"<0 on (-",chr(8734),";",x1,")",chr(8746),"(",x2,";+",chr(8734), ")",sep="")
 	print("the ",equal[0:-2],">0 on (",x1,";",x2,")", sep="")
