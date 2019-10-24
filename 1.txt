@@ -24,7 +24,7 @@ while True:
 		continue
 	else: break
 if c>0 and b>0 and a!=1 and b!=1 and c!=1 and a!=-1: equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
-elif c>0 and b<0 and a!=1 and b!=-1 and c!=1 and a!=-1:equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
+elif c>0 and b<0 and a!=1 and b!=-1 and c!=1 and a!=-1:equal=str(a)+'x'+chr(178)+str(b)+'x'+'+'+str(c)+'=0'
 elif c<0 and b>0 and a!=1 and b!=1 and c!=-1 and a!=-1: equal=str(a)+'x'+chr(178)+str(b)+'x'+'+'+str(c)+'=0'
 elif c<0 and b<0 and a!=1 and b!=-1 and c!=1 and a!=-1: equal=str(a)+'x'+chr(178)+str(b)+'x'+str(c)+'=0'
 elif a==0 and c>0:equal=str(b)+'x'+'+'+str(c)+'=0'
