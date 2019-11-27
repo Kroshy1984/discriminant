@@ -1,0 +1,21 @@
+Class Discriminant(a,b,c):
+	def _init_(self.name):
+			self.name = name
+	def StringComputing (self):
+			self.equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
+			self.equal=equal.replace('-1x','-')
+			self.equal=equal.replace('+1x','+')
+			self.equal=equal.replace('1'+'x'+chr(178),'x'+chr(178))
+			self.equal=equal.replace('0'+'x'+chr(178)+'+','')
+			self.equal=equal.replace('x+0','x')
+			self.equal=equal.replace('+0x','+')
+			self.equal=equal.replace('++','+')
+			self.equal=equal.replace('+-','-')
+			return(self.equal)
+	def DiscriminantComputing(self):
+			self.D=b**2-4*a*c
+			return:self.D 
+
+		
+	
+	
