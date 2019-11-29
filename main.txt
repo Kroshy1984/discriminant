@@ -1,0 +1,9 @@
+import Discriminant
+from TypeLoadProccessor import TypeLoadProccessor
+print ("hello!")
+print("This is the program for descriminant calculation")
+print("Please load the coefficients")
+str="Please, write a, a="
+a= TypeLoadProccessor()
+b=a.IntProccessor
+print(b)
