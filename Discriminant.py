@@ -1,40 +1,8 @@
 class Discriminant ():
-	def _init_(self,a,b,c):
-		self.equal = []
-		self.equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
-	def StringComputing (self):
-		self.equal=equal.replace('-1x','-')
-		self.equal=equal.replace('+1x','+')
-		self.equal=equal.replace('1'+'x'+chr(178),'x'+chr(178))
-		self.equal=equal.replace('0'+'x'+chr(178)+'+','')
-		self.equal=equal.replace('x+0','x')
-		self.equal=equal.replace('+0x','+')
-		self.equal=equal.replace('++','+')
-		self.equal=equal.replace('+-','-')
-		return(self.equal)
-	def DiscriminantComputing(self):
-		self.D=b**2-4*a*c
-		return(self.D) 
-	def Finalization(self):
-		if a==0 and c<0:self.fin="It's a line "+b+"x"+c+"=0"
-		if a==0 and c<0:self.fin="It's a line "+b+"x"+c+"=0"	
-		elif (self.D>0): 
-			self.x1=(-b+self.D**(0.5))/2*a
-			self.x2=(-b-self.D**(0.5))/2*a
-		elif self.D==0:
-			self.x0=-b/2*a
-		else: 
-			if ((a>0) and (self.D>0)): 
-				self.fin="the "+self.equal[0:-2]+">0 on (-"+chr(8734)+";"+x1+")"+chr(8746)+"("+x2+";+"+chr(8734)+") and the "+self.equal[0:-2]+"<0 on ("+x1+";"+x2+")"
-			elif (a<0 )and (self.D>0):
-				self.fin="the "+self.equal[0:-2]+"<0 on (-"+chr(8734)+";"+x1+")"+chr(8746)+"("+x2+";+"+chr(8734)+ " and the "+self.equal[0:-2]+">0 on ("+x1+";"+x2,")"
-			elif (a>0) and self.D<0:
-				self.fin="the "+self.equal[0:-2]+">0 at (-"+chr(8734)+";+"+chr(8734)+")"
-			elif (a<0) and (self.D<0):
-				self.fin="the "+self.equal+"<0 at (-",chr(8734)+";+"+chr(8734)+")"
-			elif(a>0) and self.D==0: self.fin="the "+self.equal[0:-2]+">0 on (-"+chr(8734)+";"+x0+")"+chr(8746)+"("+x0+";+"+chr(8734)+ ")"
-			elif(a<0) and self.D==0: self.fin="the "+equal[0:-2]+"<0 on (-"+chr(8734)+";"+x0+')'+chr(8746)+"("+x0+";+"+chr(8734)+ ")"	
-			return(self.fin)
+    def __init__(self,a,b,c):
+        self.a=a
+        self.b=b
+        self.c=c
+        self.equal=str(a)+'x'+chr(178)+'+'+str(b)+'x'+'+'+str(c)+'=0'
+        self.Discriminant=self.b**2-4*self.a*self.c
 		
-	
-	
