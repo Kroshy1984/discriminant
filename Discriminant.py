@@ -14,6 +14,6 @@ class Discriminant ():
         self.equal=self.equal.replace('++','+')
         self.equal=self.equal.replace('+-','-')
         return(self.equal)
-    def Discriminant(self,a,b,c):       
+    def Disc(self,a,b,c):       
         self.Discriminant=self.b**2-4*self.a*self.c
         return(self.Discriminant)

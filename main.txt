@@ -1,4 +1,4 @@
-import Discriminant as d
+from Discriminant  import Discriminant
 from TypeLoadProccessor import TypeLoadProccessor
 print ("hello!")
 print("This is the program for descriminant calculation")
@@ -6,6 +6,6 @@ print("Please load the coefficients")
 a= input('Please, write a, a=')
 b= input ('Please, write b, b=')
 c= input ('Please, write c, c=')
-equaluation = d.Discriminant(a,b,c)
+equaluation = Discriminant(a,b,c)
 print(equaluation.EqualComputing(a,b,c))
-print(equaluation.Discriminant(a,b,c))
+print(equaluation.Disc(a,b,c))
